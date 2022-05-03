@@ -1,0 +1,19 @@
+﻿apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: api-revenda
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: api-revenda
+  template:
+    metadata:
+      labels:
+        app: api-revenda
+    spec:
+      containers:
+      - name: api-revenda
+        image: emmanuel84/revenda:1.0
+        ports:
+        - containerPort: 80
