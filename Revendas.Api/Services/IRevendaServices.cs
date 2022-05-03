@@ -10,6 +10,5 @@ namespace Revendas.Api.Services
         Task<Revenda> GetById(int id);
         void AddAsync(Revenda revenda);
         Task Update(Revenda revenda);
-        Task Remove(int id);
     }
 }

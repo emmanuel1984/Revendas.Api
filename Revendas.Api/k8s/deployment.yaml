@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: api-revenda
-        image: emmanuel84/revenda:1.0
+        image: emmanuel84/revendas:3.0
         ports:
         - containerPort: 80

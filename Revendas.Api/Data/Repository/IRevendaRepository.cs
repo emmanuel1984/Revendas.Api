@@ -13,7 +13,5 @@ namespace Revendas.Api.Data.Repository
         Task<Revenda> FindByIdAsync(int id);
 
         void Update(Revenda revenda);
-
-        void Remove(Revenda revenda);
     }
 }

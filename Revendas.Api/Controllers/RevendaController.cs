@@ -36,12 +36,6 @@ namespace Revendas.Api.Controllers
             return CreatedAtRoute("", new { Controller = "Revenda", id = revenda.Nome }, revenda);
         }
 
-        [HttpDelete]
-        public async Task Deletar(int id)
-        {
-            await _revendaServices.Remove(id);
-        }
-
         [HttpPut]
         public async Task Atualizar([FromBody] Revenda revenda)
         {

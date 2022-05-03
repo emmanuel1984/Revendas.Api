@@ -28,13 +28,6 @@ namespace Revendas.Api.Services
         {
             return await _revendaRepository.ListAsync();
         }
-
-        public async Task Remove(int id)
-        {
-            var revenda = await _revendaRepository.FindByIdAsync(id);
-            _revendaRepository.Remove(revenda);
-        }
-
         public async Task Update(Revenda item)
         {
             var revenda = await _revendaRepository.FindByIdAsync(item.Id);

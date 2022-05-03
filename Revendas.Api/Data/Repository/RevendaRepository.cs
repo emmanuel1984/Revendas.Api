@@ -25,13 +25,6 @@ namespace Revendas.Api.Data.Repository
         {
             return await _context.Revenda.ToListAsync();
         }
-
-        public async void Remove(Revenda revenda)
-        {
-            _context.Revenda.Remove(revenda);
-            _context.SaveChanges();
-        }
-
         public void Update(Revenda revenda)
         {
             _context.Revenda.Update(revenda);
